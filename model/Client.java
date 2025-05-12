@@ -11,7 +11,7 @@ public class Client extends User {
     private PrintWriter out; 
     private BufferedReader inputC; 
 
-    // bulding connection like wire b/w client and server 
+    // building connection like wire b/w client and server 
     public Client(String n, String ip, int port) { 
         super(n);
         try {  
@@ -46,7 +46,6 @@ public class Client extends User {
         } catch (IOException e) { 
             System.out.println("Unexpected exception: " + e.getMessage());
         } 
-
 
 
     }
