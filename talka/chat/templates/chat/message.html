@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html lang="en">  
+    <head> 
+        <title> 
+            Talka
+        </title>
+        <style>     
+            body {   
+                height: 100vh; 
+                margin: 0; 
+                display: flex;    
+                justify-content: center;  
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>  
+        <form method="POST">  
+            {% csrf_token %}   
+            <textarea name="message" rows ="3" placeholder="message.." required> 
+            </textarea> 
+            <button type="submit">Send</button>
+            </button>
+        </form>
+    </body>
+</html>
